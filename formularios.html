@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formulários</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h1>Aula de Formulários</h1>
+
+		<form action="formularios.html" method="get">
+			<!--fieldset relaciona as TAGs que estão em seu corpo-->
+			<!--Vira uma margem no bloco do fieldset do formulário-->
+			<fieldset>
+				<!--Legend é o título do fieldset-->
+				<legend>Infomações Pessoais</legend>	
+				<!--Criando um label para Nome - Forma 1-->
+				<label for="nome1">Nome:</label> 
+				<input type="text" id="nome1" tabindex="4" accesskey="N" /> <br />
+
+				<!--Utilizando Disabled-->
+				Sobrenome:
+				<input type="text" id="sobrenome" value="Jacinto Barriguinha" disabled="Readonly" /> <br />
+
+				<!--Utilizando Readonly-->
+				<label for="apelido">Apelido:</label>				
+				<input type="text" id="apelido" value="Zé das Couves" readonly="Readonly" /> <br />
+
+				<!--Criando um label para Senha - Forma 2-->
+				<label for="senha1">
+					Senha:
+					<input type="password" id="senha1" /> <br />
+				</label> 
+
+				<!--Enviando informação de forma oculta no formulário-->
+				<input type="hidden" id="chave" value="bernardo.fagner@hotmail.com" />
+
+				Sexo: <br />
+				<input type="radio" name="sexo" value="M" /> Masculino <br />
+				<input type="radio" name="sexo" value="F" /> Feminino <br />
+				<br />
+			</fieldset>
+			<fieldset>
+				<legend>Informações Profissionais</legend>
+				Áreas de conhecimento: <br />
+				<input type="checkbox" name="conhecimentos" value="C" /> C <br />
+				<input type="checkbox" name="conhecimentos" value="C++" /> C++ <br />
+				<input type="checkbox" name="conhecimentos" value="Java" /> Java <br />
+				<input type="checkbox" name="conhecimentos" value="HTML&CSS" /> HML&CSS <br />
+				<br />
+
+				Currículo: <br />
+				<input type="file" id="curriculo" /> <br />
+				<br />
+
+				<!--Caixas de texto-->
+				Escreva seu resumo aqui: <br />
+				<textarea rows="5" cols="60">ABCDE</textarea> <br />
+			</fieldset>
+
+			<fieldset>
+				<legend>Endereço</legend>
+				<!--Select normal-->
+				País de Origem:
+				<select name="guarda-o-value-selecionado">
+					<option value="BR">Brasil</option>
+					<option value="AR">Argentina</option>
+					<option value="EUA">Estados Unidos</option>
+					<option value="ALE">Alemanha</option>
+				</select> <br />
+				<br />
+			</fieldset>
+			
+			<fieldset>
+				<legend>Complemento</legend>
+				<!--Select agrupado-->
+				Editores ou navegadores <br />
+				<select id="en">
+					<optgroup label="Editores">
+						<option>Notepad++</option>
+						<option>Qt Creator</option>
+						<option>Eclipse</option>					
+					</optgroup>
+					<optgroup label="Navegadores">
+						<option>Chrome</option>
+						<option>Firefox</option>
+						<option>Opera</option>					
+					</optgroup>
+				</select><br />
+				<br />
+			</fieldset>
+
+			<fieldset>
+				<legend>Verificadores</legend>
+				<!--Gerenciadores-->
+				<input type="submit" value="Inscrever"><br />
+				<input type="reset" value="Limpar Tudo"><br />
+				<input type="button" value="Validar Formulário"><br />
+				<br />
+			</fieldset>
+		</form>
+	</body>
+</html>

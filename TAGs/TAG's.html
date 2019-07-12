@@ -1,0 +1,157 @@
+***DESCRIÇÃO DAS TAG's***
+
+==========================***ELEMENTOS EM BLOCO***==========================
+<html></html>: TAG padrão, que contém todo o código html;
+
+<head></body>: Contém todas as informações que devem ser fornecidas ao navegador;
+
+<body></body>: TAG que terá como conteúdo, todo o código html da página;
+
+<h>: TAG utilizada para títulos ou cabeçalhos. Vai de h1 a h6, sendo a h1 a TAG
+representante do principal títuo do documento;
+
+<p> </p>: TAG que representa parágrafos no texto no código html;
+
+<hr>: Coloca uma linha de separação na página
+
+<ul>
+	<li> Conteudo da lista </li> Um item da lista
+</ul>: TAG que representa uma lista NÃO ordenada de itens;
+
+<ol>
+	<li> Conteudo da lista1 </li> Um item da lista
+	<li> Conteudo da lista2 </li> Um item da lista
+</ol>: TAG que representa uma lista ORDENADA de itens;
+
+<dl>
+	<dt> item 1 </dt>
+		<dd> O item 1 é isso... </dd>
+		<dd> O item 1 tambem é aquilo... </dd>
+	<dt> item 2 </dt>
+		<dd> O item 2 é isso... </dd>
+		<dd> O item 2 tambem é aquilo... </dd>
+</dl>: TAG que representa a estrutura de uma lista de definições;
+
+<ol>
+	<li> Nome do item 1
+		<ul>
+			<li> Informação A </li>
+			<li> Informação B </li>
+		</ul>
+	</li>
+
+	<li> Nome do item 1
+		<ul>
+			<li> Informação A </li>
+			<li> Informação B </li>
+		</ul>
+	</li>
+</ol>: Estrutura de uma lista de listas ^^
+
+<blockquote> Citação </blockquote>: TAG utilizada para realizar citações longas
+
+<pre> texto </pre>: Mantém a formatação do conteúdo do jeito que foi escrito no arquivo
+
+<address> Endereço </address>: Utilizada para endereços e assinaturas
+
+<hr />: Gera uma linha com quebra de linha abaixo e acima da linha criada
+
+<map> </map>: Gera links em uma ou mais áreas de uma imagem
+{
+	<img src="img/formas.gif" usemap="#formas" alt="Formas Geometricas" />
+	<map name="formas">
+	  <area shape="rect" coords="214,104,424,318" href="paginaLinkada.html" alt="Formas Geometricas" />
+	</map>:Exemplo de mapeamento
+}
+
+<div class=""> </div>: TAG que representa uma div.
+
+<table border="valor_inteiro" cellpadding="valor_inteiro" cellspacing="valor_inteiro">
+	<tr><td align="posição">Coluna1</td> <td>Coluna2</td></tr>
+	<tr><td style="background-color: gray">Item1  </td> <td>Item2</td></tr>
+	<tr><td colspan="valor_inteiro">Item1 esticado</tr>
+	<tr><td>Item1 </td> <td>Item2</td></tr>
+</table>: Exemplo de criação de Tabela
+
+==========================***	ELEMENTOS INLINE ***==========================
+<br />: TAG que força a quebra de linhas em um texto;
+
+<strong> Texto em negrito </strong>: Coloca o texto em negrito, a TAG <b></b> também faz isso, mas é ultrapassado e não é boa prática;
+
+<em>Texto em Itálico</em>: Coloca o texto em itálico;
+
+<u> Texto em underline</u>: Coloca o texto com underline;
+
+<strike> Coloca uma linha riscando o conteudo </strike>: Coloca um risco no texto
+
+<del> Trecho a ser excluido </del>: Marca um trecho do texto a ser excluido
+(risco no meio da palavras)
+
+<tt> Texto monoespaçado </tt>: Torna as letras do texto monoespaçadas;
+
+<sup> Trecho elevado </sup>: Eleva um trecho do texto (ideal para pronome de tratamento);
+
+<sub> Trexo rebaixado </sub>: Ideal para formulas quinicas;
+
+<q> Citação curta </q>: Representa uma citação no texto
+
+<big> Aumenta o tamanho da letra um pouco </big>
+
+<small> Diminui o tamanho da letra um pouco </small>
+
+<img src="diretorio" alt="Rótulo_da_foto">: Aplica uma imagem ao texto e associa
+um nome a ela pelo atributo <alt>;
+
+<a href="https://www.google.com.br">: TAG que gera link para outras páginas
+
+<a href="https://www.google.com.br" target="_blank">: TAG que gera link para
+	outras páginas e abre a página em uma nova aba ou janela (conforme o brouser)
+
+<a href="https://www.google.com.br" target="_blank" title="Link to Google">
+	</a><img src="nome_do_diretorio/nomefoto.extensao" alt="Rótulo_da_foto">
+	: Imagem como link para a página do google
+
+<a href="nome_da_pagina.html"> clique aqui </a>: Ir para uma página dentro
+do próprio site
+
+<a id="topo1"> <h1 align="center"> Lorem Ypsun1 </h1> </a>: Criando referencia ao titulo
+da pagina dentro do proprio documento COM uma TAG âncora
+
+<h1 id="topo2" align="center"> Lorem Ypsun2 </h1>: Criando referencia ao titulo
+da pagina dentro do proprio documento SEM uma TAG âncora
+
+<a href="#topo1"> Voltar ao Topo <a/>: Definindo link que leva ao titulo da pagina
+dentro do proprio documento, para ambas as opções de referenciação acima
+
+<span> Texto modificado </span>: Usada para modificar pontos específicos do texto
+
+<meta charset="utf-8">
+
+==========================***ATRIBUTOS DE TAG's***==========================
+Exemplo de sintaxe: <TAG atributo="valor_do_atributo"> </TAG>
+
+Alinhamento de texto
+	Caso de uso: <h1 style="text-align:center"> Titulo centralizado </h1>
+	Caso de uso: <h1 style="text-align:left"> Titulo centralizado </h1>
+	Caso de uso: <h1 style="text-align:right"> Titulo centralizado </h1>
+	Caso de uso: <h1 style="text-align:justify"> Titulo centralizado </h1>
+Coloração de texto
+	Caso de uso: <h1 style="color:rgb(234, 180, 80);"> Titulo colorido </h1>
+	Caso de uso: <body style="color:blue;"> Titulo colorido </body>
+	Caso de uso: <p style="color:#FFAA23;"> Titulo colorido </p>
+Adição de imagens
+	<img src="nome_do_diretorio/nomefoto.extensao" alt="Rótulo_da_foto">
+	<img src="nome_do_diretorio/nomefoto.extensao" alt="Rótulo_da_foto" style="width: 300px;">
+Estilo de lista (Banido de HTML, este tipo de estilização é usado no CSS)
+	<ul type="square">
+	</ul>
+	<ul type="circle">
+	</ul>
+Mapeamento de Imagem
+<img src="nome_do_diretorio/nomefoto.extensao" usemap="#nome_do_mapeamento" alt="Rótulo_da_foto" />
+    <map name="nome_do_mapeamento">
+      <area shape="forma_geom._do_link" coords="varia_conforme_forma_geom." href="endereço_do_redirecionamento" alt="Rótulo_da_foto" />
+      <area shape="circle" coords="107,192, 54" href="http://www.google.com" alt="Forma Circular" />
+    </map>
+Uso de Spans
+<span atributo="valor"> Texto modificado </span>
